@@ -321,10 +321,6 @@ ul {
     margin-right: 0;
 }
 
-.feature-list .title {
-    
-}
-
 .feature-image {
     width: 270px;
     height: 120px;
@@ -614,6 +610,15 @@ ul {
 .footer-social-icons {
     fill: var(--main-white-color);
 }
+
+/* -----------SUBSCRUBE FOOTER----------- */
+
+.subscribe-container {
+    display: inline-block;
+
+}
+
+
 
 /* -----------PORTFOLIO----------- */
 .button-list {

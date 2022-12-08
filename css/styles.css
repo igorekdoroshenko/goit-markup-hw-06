@@ -670,16 +670,6 @@ height: 86px;
     color: var(--main-white-color);
 }
 
-
-/* -----------SUBSCRUBE FOOTER----------- */
-
-.subscribe-container {
-    display: inline-block;
-
-}
-
-
-
 /* -----------PORTFOLIO----------- */
 .button-list {
     display: flex;

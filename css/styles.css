@@ -612,63 +612,87 @@ ul {
 }
 /*------------SUBSCRIBE FOOTER-----*/
 .subscribe-container {
-display: inline-block;
-margin-left: auto;
-width: 570px;
-height: 86px;
+    display: inline-block;
+    margin-left: auto;
+    width: 570px;
+    height: 86px;
 }
-.subscribe-title {
+.subscribe-form {
+    background-color: #2F303A;
+}
+.subscribe-label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-white-color);
+
+    display: flex;
     margin-bottom: 20px;
 }
-.subscribe-label {
-    position: relative;
+.subscribe {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
         
-    display: flex;
-    align-items: center;
+
     width: 358px;
     height: 50px;
-    margin-right: 12px;
+    padding-left: 16px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--main-white-color);
+    background-color: var(--background-hiro-footer);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+
+    display: inline-block;
+   
 }
-.subscribe-icons {
-    position: absolute;
-}
+
 .subscribe-btn {
-    position: absolute;
     width: 200px;
     height: 50px;
-    margin-left: 100px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
-    display: flex;
-    
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-white-color);
+    
+    position: relative;
+    margin-left: 8px;
+    padding-right: 62px;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
+
+.subscribe-icons {
+   position: absolute;
+   margin-left: 10px;
+
+}
+.subscribe-icons svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* -----------PORTFOLIO----------- */
 .button-list {
@@ -814,8 +838,30 @@ height: 86px;
     background-color: var(--main-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding-left: 41px;
+    padding-top: 40px;
+    padding-right: 39px;
+    padding-bottom: 40px;
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.modal-input-group {
+    width: 100%;
+    display: block;
+    margin-bottom: 28px;
 }
 
 .button-icons {

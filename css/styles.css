@@ -616,6 +616,8 @@ ul {
     margin-left: auto;
     width: 570px;
     height: 86px;
+    top: 0;
+    left: 0;
 }
 .subscribe-form {
     background-color: #2F303A;
@@ -632,6 +634,10 @@ ul {
 
     display: flex;
     margin-bottom: 20px;
+}
+
+.subscribe-wrapper {
+    display: inline-flex;
 }
 .subscribe {
     
@@ -674,17 +680,21 @@ ul {
     color: var(--main-white-color);
     
     position: relative;
-    margin-left: 8px;
+    margin-left: 12px;
     padding-right: 62px;
     padding-left: 28px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    
     
 }
 
 .subscribe-icons {
    position: absolute;
-   margin-left: 10px;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
    fill: var(--main-white-color);
 
 }
@@ -881,7 +891,6 @@ ul {
 }
 .modal-input-wrapper {
     position: relative;
-    
 }
 
 .modal-input-comment::placeholder {
@@ -926,6 +935,7 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .modal-input-comment:hover,
 .modal-input-comment:focus {
@@ -944,27 +954,105 @@ ul {
 }
 
 .modal-coordination {
-
-}
-.coordination-input:checked + svg{
-    fill: var(--accent-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .coordination-label {
-display: flex;
+    display: flex;
+    align-items: center;
+    
+    height: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+
+    
 }
-.coordination-label::before {
-    content: "";
+.coordination-check {
     width: 16px;
     height: 15px;
     border: 1px solid var(--main-color);
     border-radius: 2px;
-    display: block;
-    margin-right: 8px;
+    margin-right: 7px;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+    
+}
+.coordination-check svg {
+    fill: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.coordination-input {
+    
+}
+.coordination-input:checked + label > span{
+    border: none;
+    background-color: var(--accent-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.coordination-input:checked + label > span svg {
+    fill: var(--main-white-color);
 }
 .coordination-contract {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-left: 7px;
+}
 
+.button-send {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 50px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-send:focus,
+.button-send:hover{
+    background-color: #188CE8;
 }
 
 .button-icons {
